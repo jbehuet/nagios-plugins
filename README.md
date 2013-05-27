@@ -29,9 +29,9 @@ Version Perl
 Vérification du taux d'utilisation des inodes du système de fichiers
 
 ### Usage
-```
-Version Bash
 
+Version Bash
+```
 ./check_inodes.sh
 ```
 
