@@ -3,8 +3,8 @@
 # Ident		: check_inodes.sh - 1.2
 # Auteur	: J.Behuet
 #
-# Description 	: Vérification du taux d'utilisation des inodes du système de
-# 		  fichiers
+# Description 	: Vérification des inodes du système de fichier
+# 
 # Usage		: ./check_inodes.sh
 # Remarque(s)	:
 #
@@ -80,7 +80,7 @@ do
 done
 
 # FS ARRAY
-ARR=(`df -i | grep -vE "^Filesystem|shm|boot|none" |  awk '{ print $1";"substr($5, 0, length($5)-1); }'`)
+ARR=(`df -i | grep -E "^/dev/" |  awk '{ print $1";"$5; }'`)
 
 CPT=0
 WARNING=0
@@ -95,7 +95,7 @@ for v in "${ARR[@]}"; do
   if [ $CPT -ne 0 ]; then
   
     FS_INFO=(`echo $v | tr ';' ' '`)
-    INODE=${FS_INFO[1]}
+    INODE=(`echo ${FS_INFO[1]} | sed 's/%//'`)
 
     if [ "$INODE" -ge "$CRITICAL_VALUE" ]; then
        FS_CRITICAL+=${FS_INFO[0]}", "
