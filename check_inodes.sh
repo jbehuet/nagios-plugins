@@ -1,6 +1,6 @@
 #! /bin/bash
 #################################################################################
-# Ident		: check_inodes.sh - 1.2
+# Ident		: check_inodes.sh - 1.3
 # Auteur	: J.Behuet
 #
 # Description 	: Vérification des inodes du système de fichier
@@ -15,11 +15,12 @@
 # 1.0  |23-05-2013| J.Behuet	     |
 # 1.1  |23-05-2013| J.Behuet	     | Inversement FS_CRITICAL et FS_OK
 # 1.2  |25-05_2013| J.Behuet	     | Correction substr()
+# 1.3  |27-05-2013| J.Behuet	     | Correction suppression %
 #
 #################################################################################
 
 SCRIPTNAME=`basename $0`
-VERSION="1.2"
+VERSION="1.3"
 
 # COLOR
 GREEN="\\033[1;32m"
