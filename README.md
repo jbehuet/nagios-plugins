@@ -34,5 +34,7 @@ Version Bash
 ```
 
 ### Options
+```
 -h : Aide
 -v : Mode verbeux
+```
