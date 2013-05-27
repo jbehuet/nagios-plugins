@@ -6,20 +6,22 @@
 Vérifie que les points de montage du système de fichiers ne sont pas en RO par un test d'écriture
 
 ### Usage
- ```
-Version Bash
 
+Version Bash
+```
 ./check_fs.sh
 ```
-```
-Version Perl
 
+Version Perl
+```
 ./check_fs.pl
 ```
 
 ### Options
+```
 -h : Aide
 -v : Mode verbeux
+```
 
 ## Check Inodes (check_inodes)
 
