@@ -3,7 +3,7 @@
 ## Check File System (check_fs)
 
 ### Description
-Vérifie que les points de montage du système de fichier ne sont pas en RO par un test d'ecriture
+Vérifie que les points de montage du système de fichiers ne sont pas en RO par un test d'écriture
 
 ### Usage
  ```
@@ -15,6 +15,22 @@ Version Bash
 Version Perl
 
 ./check_fs.pl
+```
+
+### Options
+-h : Aide
+-v : Mode verbeux
+
+## Check Inodes (check_inodes)
+
+### Description
+Vérification du taux d'utilisation des inodes du système de fichiers
+
+### Usage
+```
+Version Bash
+
+./check_inodes.sh
 ```
 
 ### Options
