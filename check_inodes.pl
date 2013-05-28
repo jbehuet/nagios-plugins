@@ -3,7 +3,7 @@
 # Ident         : check_inodes.pl - 1.0
 # Auteur        : J.Behuet
 #
-# Description   : érification des inodes du système de fichier
+# Description   : Vérification des inodes du système de fichier
 # 
 # Usage         : ./check_inodes.pl
 # Remarque(s)   :
