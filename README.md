@@ -35,6 +35,11 @@ Version Bash
 ./check_inodes.sh
 ```
 
+Version Perl
+```
+./check_inodes.pl
+```
+
 ### Options
 ```
 -h : Aide
